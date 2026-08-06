@@ -71,5 +71,15 @@
   <p class="hint">Doesn't open? Tap the ⋯ at the top and choose "Open in Safari".</p>
   <div class="privacy"><a href="https://progressosupport.github.io/SwiPic/privacy.html">Privacy Policy</a></div>
 
+  <script>
+    (function () {
+      var a = document.getElementById('dl');
+      var ua = navigator.userAgent || '';
+      var inApp = /Instagram|FBAN|FBAV|FB_IAB|Line\/|Twitter|TikTok|Musical|Snapchat/i.test(ua);
+      if (a && inApp) {
+        a.setAttribute('href', 'itms-apps://apps.apple.com/app/id6789896340');
+      }
+    })();
+  </script>
 </body>
 </html>
