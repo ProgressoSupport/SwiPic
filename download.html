@@ -54,7 +54,7 @@
   <h1>SwiPic</h1>
   <p class="tag">Your iPhone isn't old — it's full. Swipe through the clutter and win gigabytes back in minutes.</p>
 
-  <a class="store-btn" id="dl" href="https://apps.apple.com/app/id6789896340">
+  <a class="store-btn" id="dl" href="https://apps.apple.com/app/id6789896340" target="_top" rel="noopener">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.05 12.7c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.78 2.29-1.61 2.8-.41 6.95 1.16 9.22.77 1.11 1.68 2.36 2.87 2.31 1.15-.05 1.58-.74 2.97-.74 1.39 0 1.78.74 3 .72 1.24-.02 2.02-1.13 2.78-2.25.88-1.29 1.24-2.54 1.26-2.6-.03-.01-2.41-.92-2.44-3.67zM14.79 5.7c.64-.78 1.07-1.85.95-2.93-.92.04-2.03.61-2.69 1.38-.59.69-1.11 1.79-.97 2.85 1.02.08 2.07-.52 2.71-1.3z"/></svg>
     <span>
       <small>Download on the</small>
@@ -71,15 +71,5 @@
   <p class="hint">Doesn't open? Tap the ⋯ at the top and choose "Open in Safari".</p>
   <div class="privacy"><a href="https://progressosupport.github.io/SwiPic/privacy.html">Privacy Policy</a></div>
 
-  <script>
-    document.getElementById('dl').addEventListener('click', function (e) {
-      e.preventDefault();
-      var appId = '6789896340';
-      window.location.href = 'itms-apps://apps.apple.com/app/id' + appId;
-      setTimeout(function () {
-        window.location.href = 'https://apps.apple.com/app/id' + appId;
-      }, 500);
-    });
-  </script>
 </body>
 </html>
