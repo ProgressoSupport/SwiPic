@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SwiPic – Clean your iPhone storage</title>
+<meta name="apple-itunes-app" content="app-id=6789896340">
+<meta name="description" content="SwiPic – swipe to clean your camera roll and free up gigabytes. Free on the App Store.">
+<meta property="og:title" content="SwiPic – Swipe Photo Cleaner">
+<meta property="og:description" content="Swipe to clean your camera roll and free up storage. Free on the App Store.">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(160deg, #6b4ce0 0%, #4a2fb0 55%, #2e1a6e 100%);
+    color: #fff;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 32px 22px;
+  }
+  .icon {
+    width: 92px; height: 92px; border-radius: 22px;
+    background: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 46px; margin-bottom: 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  }
+  h1 { font-size: 27px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.3px; }
+  .tag { font-size: 16px; opacity: 0.85; margin-bottom: 30px; line-height: 1.4; max-width: 320px; }
+  .store-btn {
+    display: inline-flex; align-items: center; gap: 11px;
+    background: #000; color: #fff; text-decoration: none;
+    padding: 13px 26px; border-radius: 14px;
+    font-size: 19px; font-weight: 600;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    transition: transform 0.1s ease;
+  }
+  .store-btn:active { transform: scale(0.97); }
+  .store-btn small { display: block; font-size: 11px; font-weight: 400; opacity: 0.8; line-height: 1; margin-bottom: 2px; }
+  .store-btn .big { font-size: 19px; font-weight: 600; line-height: 1.1; }
+  .features { margin-top: 34px; display: flex; flex-direction: column; gap: 12px; max-width: 320px; }
+  .feature { display: flex; align-items: center; gap: 12px; font-size: 15px; opacity: 0.92; text-align: left; }
+  .feature span.dot { flex: 0 0 auto; width: 26px; height: 26px; border-radius: 8px; background: rgba(255,255,255,0.16); display: flex; align-items: center; justify-content: center; font-size: 15px; }
+  .hint { margin-top: 30px; font-size: 13px; opacity: 0.6; max-width: 300px; line-height: 1.5; }
+  .privacy { margin-top: 22px; }
+  .privacy a { color: rgba(255,255,255,0.7); font-size: 13px; text-decoration: underline; }
+</style>
+</head>
+<body>
+  <div class="icon">🖼️</div>
+  <h1>SwiPic</h1>
+  <p class="tag">Your iPhone isn't old — it's full. Swipe through the clutter and win gigabytes back in minutes.</p>
+
+  <a class="store-btn" id="dl" href="https://apps.apple.com/app/id6789896340">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.05 12.7c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.78 2.29-1.61 2.8-.41 6.95 1.16 9.22.77 1.11 1.68 2.36 2.87 2.31 1.15-.05 1.58-.74 2.97-.74 1.39 0 1.78.74 3 .72 1.24-.02 2.02-1.13 2.78-2.25.88-1.29 1.24-2.54 1.26-2.6-.03-.01-2.41-.92-2.44-3.67zM14.79 5.7c.64-.78 1.07-1.85.95-2.93-.92.04-2.03.61-2.69 1.38-.59.69-1.11 1.79-.97 2.85 1.02.08 2.07-.52 2.71-1.3z"/></svg>
+    <span>
+      <small>Download on the</small>
+      <span class="big">App Store</span>
+    </span>
+  </a>
+
+  <div class="features">
+    <div class="feature"><span class="dot">👆</span> Swipe left to delete, right to keep</div>
+    <div class="feature"><span class="dot">🔒</span> 100% on-device — no cloud, no tracking</div>
+    <div class="feature"><span class="dot">✨</span> Finds duplicates, blurry shots & screenshots</div>
+  </div>
+
+  <p class="hint">Doesn't open? Tap the ⋯ at the top and choose "Open in Safari".</p>
+  <div class="privacy"><a href="https://progressosupport.github.io/SwiPic/privacy.html">Privacy Policy</a></div>
+
+  <script>
+    document.getElementById('dl').addEventListener('click', function (e) {
+      e.preventDefault();
+      var appId = '6789896340';
+      window.location.href = 'itms-apps://apps.apple.com/app/id' + appId;
+      setTimeout(function () {
+        window.location.href = 'https://apps.apple.com/app/id' + appId;
+      }, 500);
+    });
+  </script>
+</body>
+</html>
